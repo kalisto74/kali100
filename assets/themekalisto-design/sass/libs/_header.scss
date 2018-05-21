@@ -1,0 +1,40 @@
+.header-icons {
+  float: right;
+  margin: 9px 0;
+  text-align: right;
+  @media (max-width: 991px) {
+    display: inline-flex;
+    float: none;
+    margin: 0;
+    vertical-align: top;
+  }
+}
+
+.phone-header,
+.search-header {
+  border-right: 1px solid $darkLight;
+  border-right: 1px solid rgba($darkLight,.8);
+  color: $colordark;
+  display: inline-flex;
+  height: 40px;
+  text-align: center;
+  width: 41px;
+  &:last-child {
+    border-right: 0 none;
+  }
+  a {
+    display: block;
+    height: 30px;
+    padding-top: 7px;
+    width: 100%;
+    color: $colordark;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.phone-header {
+  border-right: 0 none;
+  margin-right: -15px;
+}

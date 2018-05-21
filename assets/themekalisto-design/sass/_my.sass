@@ -1,0 +1,940 @@
+*::-webkit-input-placeholder
+  color: $colordark
+  opacity: 1
+
+*:-moz-placeholder
+  color: $colordark
+  opacity: 1
+
+*::-moz-placeholder
+  color: $colordark
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: $colordark
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: $colordark
+body input:required:valid,
+body textarea:required:valid
+  color: $colordark
+
+\::selection, ::-moz-selection
+  background: $white
+  color: $colordark
+
+.page-title
+  \::selection, ::-moz-selection
+    background: $white
+    color: $colordark
+
+body
+  overflow-x: hidden
+  position: relative
+  margin: 0
+  padding: 0
+  font-family: $main-family
+  font-weight: $font-weight
+  font-size: $font-size
+  line-height: $line-height-content
+  color: $colordark
+  background-color: $white
+
+a, abbr, acronym, address, applet, aside, audio, b, big, body, canvas, caption, center, cite, code, dd, del, details, dfn, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+  margin: 0
+  padding: 0
+  border: 0
+  vertical-align: baseline
+
+a, input, select, textarea
+  vertical-align: top
+  outline: none !important
+  -webkit-border-radius: 0
+
+select:-moz-focusring
+  color: transparent
+  outline: none !important
+  text-shadow: 0 0 0 #000 !important
+  border: 0 !important
+
+textarea
+  resize: none
+
+img
+  outline: 0
+  vertical-align: top
+  border: 0
+  max-width: 100.1%
+  height: auto
+
+a
+  color: $primary
+  transition: all 0.3s ease-in-out
+  -webkit-transition: all 0.3s ease-in-out
+  &:hover, &:focus
+    text-decoration: none
+    color: $primarySecond
+
+.overlay
+  position: absolute
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(48, 166, 124, 0.5)
+
+[class^="icon-"], [class*=" icon-"]
+  display: inline-block
+  font-family: 'FontAwesome'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: inherit
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+/* 2) Heading */
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 20px
+  font-weight: 300
+  color: $colordark
+
+h4, h5, h6
+  font-weight: 400
+
+h5, h6
+  margin-bottom: 10px
+h1
+  font-size: 2.5em
+  line-height: 1.25em
+h2
+  font-size: 2em
+  line-height: 1.25em
+h3
+  font-size: 1.6667em
+  line-height: 1.2222em
+h4
+  font-size: 1.3333em
+  line-height: 1.25em
+h5
+  font-size: 1.1666em
+  line-height: 1.1428em
+  color: $primary
+h6
+  font-size: 1.0833em
+
+p
+  margin: 0 0 10px
+
+ol, ul
+  list-style: none
+  margin: 0
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+hr
+  margin-top: 20px
+  margin-bottom: 20px
+  border-color: $primary
+
+small
+  font-size: 0.8333em
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+/* 6) HTML5 & CSS3 Styles for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+/* 7) Tools */
+.clearer
+  clear: both !important
+  padding: 0 !important
+  margin: 0 !important
+
+.hidden
+  display: block !important
+  border: 0 !important
+  margin: 0 !important
+  padding: 0 !important
+  font-size: 0 !important
+  line-height: 0 !important
+  width: 0 !important
+  height: 0 !important
+  overflow: hidden !important
+
+.nobr
+  white-space: nowrap !important
+
+.full-width
+  width: 100% !important
+
+.width-auto
+  width: auto !important
+
+img.full-width
+  height: auto
+
+.uppercase
+  text-transform: uppercase
+
+.fourty-space
+  letter-spacing: .04em !important
+
+.no-letter-spacing
+  letter-spacing: normal !important
+
+.font-light
+  font-weight: 300 !important
+
+.font-normal
+  font-weight: 400 !important
+
+.fontsize-lg
+  font-size: 1.3333em
+  line-height: 1.5
+
+p.fontsize-lg
+  line-height: 1.8
+
+.overflow-hidden
+  overflow: hidden
+
+.full-height
+  height: 100%
+
+/* 8) Color */
+.skin-color
+  color: $primary !important
+
+.skin-bg
+  background-color: $primary !important
+
+.skin-bg-alpha
+  background-color: rgba(151, 204, 36, 0.75) !important
+
+.color-blue
+  color: #1b4268 !important
+
+.color-light-blue
+  color: #455b79 !important
+
+.color-white
+  color: #fff !important
+
+.hover-color-skin:hover
+  color: $primary !important
+
+.hover-color-blue:hover
+  color: #1b4268 !important
+
+/*-- MAIN MY ------------ */
+.bg-inverse
+  background-color: $colordark
+.navbar-brand
+  color: $white
+  margin-right: 0rem
+  img 
+    padding-left: 10px
+    padding-right: 10px
+  &:focus, &:hover
+    color: $primary
+.navbar 
+  padding: 0
+  .navbar-toggler
+    button:focus
+      outline: none
+      outline: none
+.navbar-nav .nav-link
+  color: $white
+  text-transform: uppercase
+  font-weight: 500
+  padding: 10px 20px
+  &:focus, &:hover
+    color: $primary
+.navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show,  .navbar-nav .show>.nav-link
+  color: $primary
+  font-weight: 700
+.dropdown:hover > .dropdown-menu
+  display: block
+  margin: 0
+.custom-toggler.navbar-toggler
+  margin: 10px 10px
+.fa-bars
+  color: $primary
+.navbar .nav-item
+  .btn.btn-sm.login 
+    margin-top: 14px
+button.search-submit,
+input.search
+  background: none
+  border: 0
+.form-inline .search
+    width: 90%
+
+.fa.has-circle
+  display: inline-block
+  border: 1px solid $white
+  width: 2.2em
+  height: 2.2em
+  line-height: 2.16em
+  border-radius: 50% 50% 50% 50%
+  text-align: center
+  color: $white
+  &:hover
+    color: $primary
+    border: 1px solid $primary
+
+.card-meta
+  font-size: 12px
+
+/* __________ Pagination __________ */
+.pagination
+  margin: 10px 0 10px
+  padding: 0
+  li
+    width: 40px
+    height: 40px
+    border: 1px solid $colordark
+    text-align: center
+    line-height: 40px
+    font-size: $font-size
+    color: $colordark
+    border-radius: 50%
+    margin: 0 20px 10px 0
+    &.disabled, &.control
+      display: none
+    &.active, a.active
+      color: $white
+      border-color: $primary
+      background-color: $primarySecond
+    &:first-child
+      border-radius: 50% 50% 50% 50%
+    a
+      color: $colordark
+      display: block
+      border-radius: 50%
+      &:focus, &:hover, &:active
+        background-color: $primarySecond
+        color: $white
+        border-color: $primary
+.pagination > li:first-child > a,
+.pagination > li:first-child > span
+  border-radius: 50%
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover
+  background-color: $primary
+  color: $white
+  border-color: $primarySecond
+
+/* -- Slider */
+.link-overlay
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(0,0,0,0)
+	-webkit-transition: background-color 0.3s ease
+	transition: background-color 0.3s ease
+	&:before
+		display: block
+		width: 46px
+		height: 46px
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -22px 0 0 -25px
+		border-radius: 50%
+		background: $white
+		text-align: center
+		line-height: 46px
+		color: #2c2c2c
+		-webkit-transform: scale(0.8)
+		transform: scale(0.8)
+		opacity: 0
+		-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease
+		transition: transform 0.3s ease, opacity 0.3s ease
+
+.foto-image:hover .link-overlay
+	background: rgba(20,22,23,0.6)
+
+.foto-image:hover  .link-overlay:before
+	-webkit-transform: scale(1)
+	transform: scale(1)
+	opacity: 1
+
+.icon-zoom:before
+	content: "\f0b2"
+
+.image-source-link
+  color: $primary
+  
+/* Navigation */
+.owl-theme .owl-buttons
+  position: absolute
+  left: 50%
+  top: -60px
+  width: 100%
+  text-align: right
+  transform: translateX(-50%)
+  -o-transform: translateX(-50%)
+  -ms-transform: translateX(-50%)
+  -webkit-transform: translateX(-50%)
+
+.owl-theme  
+  .owl-controls
+    .owl-buttons
+      .owl-prev,
+      .owl-next
+        z-index: 1
+        display: inline
+        height: 32px
+        line-height: 32px
+        font-weight: 400
+        padding: 5px 20px
+        font-size: 1.0em
+        border-radius: 14px 14px 14px 14px
+        background: $white
+        text-align: center
+        margin: 0 0 0 10px
+        border: 2px solid $colordark
+        transition: all 0.3s ease-in-out
+        -webkit-transition: all 0.3s ease-in-out
+        font-family: FontAwesome
+        transition: all, .2s, ease
+      .owl-prev
+        &::before
+          content: "\f177"
+          color: $colordark
+        &:hover
+          background: $primary
+          color: $white
+          border: 2px solid $primary
+      .owl-next
+        &::before
+          content: "\f178"
+          color: $colordark
+        &:hover
+          background: $primary
+          color: $white
+          border: 2px solid $primary
+
+.owl-page 
+  display: inline-block
+  vertical-align: top
+  margin-left: 16px
+  zoom: 1
+  *display: inline
+  span 
+    display: block
+    width: 14px
+    height: 14px
+    margin: 0
+    border-radius: 50%
+    border: 2px solid #333
+  
+  &.active span 
+    position: relative
+    top: -3px
+    bottom: -3px
+    width: 20px
+    height: 20px
+    background-color: #333
+  
+  span.owl-numbers 
+    height: auto
+    width: auto
+    color: $white
+    padding: 2px 10px
+    font-size: 0.8em
+    -webkit-border-radius: 30px
+    -moz-border-radius: 30px
+    border-radius: 30px
+
+.mfp-with-zoom
+  .mfp-container, &.mfp-bg
+    opacity: 0
+    -webkit-backface-visibility: hidden
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+  &.mfp-ready
+    .mfp-container
+      opacity: 1
+    &.mfp-bg
+      opacity: 0.8
+  &.mfp-removing
+    .mfp-container, &.mfp-bg
+      opacity: 0
+
+/* Modal */
+.modal-header
+  border-bottom: 0
+  background: $colorGray
+.modal-footer
+  border-top: 0
+  justify-content: center
+  background: $colorGray
+.modal-body
+  padding: 15px 30px
+
+.c-content-divider
+  text-align: center
+  display: block
+  height: 2px
+  background: #3f444a
+  margin: 20px 0
+  position: relative
+  span
+    background: #fff
+    padding: 5px 7px
+    width: auto
+    position: relative
+    top: -10px
+    margin: 0 auto
+  .c-divider-sm
+    height: 1px
+.c-bg-grey
+  background-color: #eeeeee !important
+
+/*-- FEATURED WORKS ----- */
+
+.work_item
+  position: relative
+  transition: all 0.3s ease-in-out
+  -webkit-transition: all 0.3s ease-in-out
+
+.owl-item:hover .work_item
+  transform: scale(0.95)
+  -o-transform: scale(0.95)
+  -ms-transform: scale(0.95)
+  -webkit-transform: scale(0.95)
+
+.work_item
+  .work_description
+    position: absolute
+    z-index: 20
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    text-align: center
+    opacity: 0
+    background-color: rgba(0, 0, 0, 0.8)
+    transition: all 0.3s ease-in-out
+    -webkit-transition: all 0.3s ease-in-out
+  &:hover .work_description
+    opacity: 1
+  .work_description .work_descr_cont
+    position: absolute
+    left: 0
+    top: 50%
+    width: 100%
+    opacity: 0
+    transform: translateY(-100%)
+    -o-transform: translateY(-100%)
+    -ms-transform: translateY(-100%)
+    -webkit-transform: translateY(-100%)
+    transition: all 0.3s ease-in-out
+    -webkit-transition: all 0.3s ease-in-out
+  &:hover .work_description .work_descr_cont
+    opacity: 1
+    transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+  .work_description
+    a
+      display: block
+      margin: 0 0 6px
+      font-weight: 300
+      line-height: 24px
+      font-size: 24px
+      color: $white
+    span
+      color: $colorGray
+  a.zoom
+    position: absolute
+    z-index: 30
+    left: 50%
+    bottom: 0
+    width: 60px
+    height: 36px
+    margin-left: -30px
+    opacity: 0
+    background-image: url(../img/zoom.png)
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-size: 100% auto
+    -webkit-background-size: 100% auto
+    transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out
+    -webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out
+  &:hover a.zoom
+    bottom: 20%
+    opacity: 1
+  a.zoom:hover
+    background-image: url(../img/zoom_h.png)
+
+/*-- FOOTER ------------ */
+.footer
+  background: linear-gradient(to right, $colordark -100%, $colorGray 100%)
+  padding: 50px 0 38px
+
+.footer-area
+  p
+    font-size: 16px
+
+.footer-title
+  h5
+    color: $colordark
+    font-size: 18px
+    font-weight: 700
+    line-height: 26px
+    margin: 0
+    text-transform: uppercase
+    font-style: normal
+    text-align: left
+
+ul.footer-content
+  margin-top: 0px
+  padding-left: 0
+  margin-bottom: 10px
+  li
+    list-style: outside none disc
+    color: $colordark
+    a
+      color: $colordark
+      display: block
+      font-family: $main-family
+      font-size: 16px
+      line-height: 35px
+      text-decoration: none
+      transition: all 0.3s ease 0s
+      &:hover
+        color: lighten($primary, 6%)
+
+.footer-content.box-information
+  margin-left: 0
+
+ul.footer-content.box-information li
+  color: $colordark
+  list-style: outside none none
+  min-height: 30px
+  display: block
+  i
+    color: $colordark
+    float: left
+    line-height: 30px
+    width: 25px
+  a
+    color: $colordark
+    &:hover
+      color: $primary
+
+ul.social
+  margin-top: 0px
+
+/*-- SOCIAL BUTTONS -------------- */
+
+.social li
+  display: inline-block
+  margin: 0 7px 10px 0
+  a
+    display: block
+    width: 40px
+    height: 40px
+    border: 1px solid $colordark
+    text-align: center
+    line-height: 40px
+    font-size: 18px
+    color: $colordark
+    &:hover
+      color: $primary
+      border-color: $primary
+
+/* go to top -----------------------------------*/
+#backtotop
+  z-index: 999
+  display: inline-block
+  position: fixed
+  visibility: hidden
+  bottom: 50%
+  right: 20px
+  width: 36px
+  height: 36px
+  line-height: 36px
+  font-size: 16px
+  text-align: center
+  opacity: .2
+  background: linear-gradient(to right, $colordark -100%, $colorGray 100%)
+  color: $white
+  i
+    display: block
+    width: 100%
+    height: 100%
+    line-height: inherit
+  &.visible
+    visibility: visible
+    opacity: .5
+  &:hover
+    opacity: 1
+    background: linear-gradient(to left, $colordark -100%, $colorGray 100%)
+
+/* -------------------- */
+.bg-gray
+  background: $colorGray
+.page-title-container
+  background: $colorGray
+  position: relative
+  overflow: visible
+
+  .entry-title
+    font-weight: 300
+    font-size: 3.3333em
+    color: $darkLight
+    text-align: center
+  .page-title
+    padding: 20px 0 25px
+  .breadcrumb
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 50%)
+    background: #fff
+    border-radius: 18px 18px 18px 18px 
+    padding: 0 25px
+    white-space: nowrap
+    margin-bottom: 0rem
+    li
+      display: inline-block
+      line-height: 36px
+      font-size: 0.8333em
+      text-transform: uppercase
+      margin-left: 5px
+      &:first-child
+        margin-left: 0
+      a
+        padding-right: 5px
+      &:after
+        content: "-"
+      &:last-child:after
+        content: ""
+      &.active
+      
+.card-footer a
+  color: $darkLight
+  &:hover
+    color: $colordark
+
+/* 2.3. Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.btn
+  border: none
+  color: #fff
+  cursor: pointer
+  padding: 0 30px
+  white-space: nowrap 
+  text-transform: uppercase
+  font-weight: 600
+  background: $primary
+  font-size: 0.9167em
+  height: 42px
+  line-height: 42px
+  border-radius: 21px 21px 21px 21px
+  margin-right: 5px
+  transition: all 0.2s ease
+  box-shadow: none
+  vertical-align: baseline
+  margin-right: 5px
+  &:last-child
+    margin-right: 0
+  &:focus, 
+  &:active:focus, 
+  &.active:focus
+    outline: none
+  &:hover
+  &.active
+    box-shadow: none
+
+  /* size */
+  &.btn-sm
+    height: 28px
+    line-height: 28px
+    font-weight: 400
+    padding: 0 20px
+    font-size: 0.8333em 
+    border-radius: 14px 14px 14px 14px
+  &.btn-lg
+    height: 47px
+    line-height: 47px
+    font-size: 1em
+    padding: 0 36px
+    border-radius: 24px 24px 24px 24px
+  &.btn-xl
+    height: 57px
+    line-height: 57px
+    font-size: 1em
+    padding: 0 36px
+    border-radius: 29px 29px 29px 29px
+  &.full-width
+    padding-left: 0
+    padding-right: 0
+    text-align: center
+
+  /* style */
+  &.style1
+    &:hover, 
+    &:active, 
+    &:focus, 
+    &.active
+      background: $primaryLight
+      color: #fff
+  &.style2
+    background: #20466c
+    &:hover, 
+    &:active, 
+    &:focus, 
+    &.active
+      background: $primaryLight
+      color: #fff
+  &.style3
+    background: #738d00
+    color: inherit
+    &:hover, 
+    &:active, 
+    &:focus, 
+    &.active
+      color: $primary
+  &.style4
+    background: none
+    border: 1px solid $darkLight 
+    color: inherit
+    line-height: 40px
+    &.btn-sm
+      line-height: 26px
+    &.btn-lg
+      line-height: 45px
+    &.btn-xl
+      line-height: 55px
+    &:hover, 
+    &:active, 
+    &:focus, 
+    &.active
+      color: #fff
+      border-color: $primary
+      background: $primary
+    &.hover-blue
+      &:hover, 
+      &:active, 
+      &:focus, 
+      &.active
+        border-color: $primary
+        background: $primary
+    &.color-white
+      border-color: #fff
+      &:hover, 
+      &:active, 
+      &:focus, 
+      &.active
+        border-color: $primary
+    &.color-black
+      border-color: #343434
+      color: #343434
+      &:hover, 
+      &:active, 
+      &:focus, 
+      &.active
+        border-color: $primary
+        color: #fff
+    &.bg-white
+      background: #fff
+      &:hover, 
+      &:active, 
+      &:focus, 
+      &.active
+        background: $primary
+.btn1
+  border: none
+  cursor: pointer
+  padding: 0 30px
+  white-space: nowrap 
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 0.9167em
+  height: 42px
+  line-height: 42px
+  border-radius: 21px 21px 21px 21px
+  margin-right: 5px
+  transition: all 0.2s ease
+  box-shadow: none
+  vertical-align: baseline
+  margin-right: 5px
+.btn-social
+  padding-left: 40px
+  border-radius: 0
+  color: $white
+  >:first-child 
+    font-size: 18px
+    padding-top: 3px
+  &:hover,
+  &:active,
+  &:focus
+    color: #fff
+  &.btn-md
+    >:first-child
+      padding-top: 4px
+      width: 40px
+      font-size: 20px
+  &.btn-lg
+    >:first-child
+      width: 44px
+      font-size: 22px
+
+.social-btn-group
+  .input-group
+    display: inline-flex
+    width: 1%
+    color: #fff
+    li 
+      margin-right: 5px
+
+#iso
+  .item
+    margin: 0px
+    padding: 0px
+  .card
+    width: 93%
+    margin-bottom: 30px
+
+.tags 
+  .tag
+    display: inline-block
+    font-size: 0.8333em
+    padding: 8px
+    border: 1px solid $darkLight
+    border-radius: 1.5em 1.5em 1.5em 1.5em
+    color: $darkLight
+    margin-bottom: 10px
+    margin-right: 4px
+    transition: all 0.3s ease 0s
+    &:hover
+      color: #fff
+      background: $primary
+      border-color: $primary
