@@ -16,19 +16,19 @@ var path = {
   src: {
     html: 'assets/themekalisto-design/*.html',
     js: ['assets/themekalisto-design/libs/jquery-3.2.1.min.js',
-      'assets/themekalisto-design/libs/bootstrap/popper.min.js',
-      'assets/themekalisto-design/libs/bootstrap/bootstrap.min.js',
-      'assets/themekalisto-design/libs/magnific-popup/jquery.magnific-popup.min.js',
-      'assets/themekalisto-design/libs/owl-carousel/owl-carousel/owl.carousel.min.js',
-      'assets/themekalisto-design/libs/jquery.carouFredSel-6.2.1-packed.js',
-      'assets/themekalisto-design/libs/prettyPhoto/js/jquery.prettyPhoto.js',
-      'assets/themekalisto-design/libs/isotope.pkgd.min.js',
-      'assets/themekalisto-design/libs/waypoints.min.js',
-      'assets/themekalisto-design/libs/animate/animate-css.js',
-      'assets/themekalisto-design/libs/jquery.easing.min.js',
-      'assets/themekalisto-design/libs/flowtype.js',
-      'assets/themekalisto-design/libs/modernizr/modernizr.js',
-      'assets/themekalisto-design/js/common.js'
+        'assets/themekalisto-design/libs/bootstrap/bootstrap.min.js',
+        'assets/themekalisto-design/libs/bootstrap/popper.min.js',
+        'assets/themekalisto-design/libs/magnific-popup/jquery.magnific-popup.min.js',
+        'assets/themekalisto-design/libs/owl-carousel/owl-carousel/owl.carousel.min.js',
+        'assets/themekalisto-design/libs/jquery.carouFredSel-6.2.1-packed.js',
+        'assets/themekalisto-design/libs/prettyPhoto/js/jquery.prettyPhoto.js',
+        'assets/themekalisto-design/libs/isotope.pkgd.min.js',
+        'assets/themekalisto-design/libs/waypoints.min.js',
+        'assets/themekalisto-design/libs/animate/animate-css.js',
+        'assets/themekalisto-design/libs/jquery.easing.min.js',
+        'assets/themekalisto-design/libs/flowtype.js',
+        'assets/themekalisto-design/libs/modernizr/modernizr.js',
+        'assets/themekalisto-design/js/common.js'
     ],
     css: 'assets/themekalisto-design/sass/main.sass',
     fonts: 'assets/themekalisto-design/fonts/**/*.*'
@@ -47,7 +47,7 @@ var gulp          = require('gulp'),
     sass          = require('gulp-sass'),
     browsersync   = require('browser-sync'),
     concat        = require('gulp-concat'),
-    uglify        = require('gulp-uglify'),
+    uglify        = require('gulp-uglify-es').default,
     cleancss      = require('gulp-clean-css'),
     rename        = require('gulp-rename'),
     autoprefixer  = require('gulp-autoprefixer'),
@@ -62,7 +62,7 @@ gulp.task('browser-sync', function () {
       baseDir: './assets/themekalisto-design'
     },
     notify: false
-  })
+  });
 });
 
 // сбор стилей
@@ -89,7 +89,7 @@ gulp.task('js', function () {
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
   gulp.watch(path.watch.css, ['sass']);
   gulp.watch(path.watch.js, ['js']);
-  gulp.watch('assets/themekalisto-design/*.html', browsersync.reload)
+  gulp.watch('assets/themekalisto-design/*.html', browsersync.reload);
 });
 
 // задача по умолчанию
